@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Lista Livros</h1>
+    <ul>
+        {% for livro in livros %}
+            <li><strong>{{livro.titulo}} -  {{livro.autor}} ({{livro.paginas}}paginas)</strong></li>
+        {% empty %}
+            <li>Nenhum livro cadastrado</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
